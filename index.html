@@ -1,4 +1,152 @@
 <!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Home</title>
+
+  <meta name="author" content="Sean Cox" />
+  <meta name="description" content="Splash" />
+
+  <link href='https://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Rochester' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+  <style>
+    #logo img {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  padding: 10px;
+  display: inline;
+}
+
+h1 {
+  display: inline-block;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.confidence {
+  width: 75%;
+}
+
+h2 {
+  font-family: 'Rochester', cursive;
+}
+
+h1 {
+  font-size: 1.7em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+/* you can structure your code's white space so that it is as readable for when you come back in the future or for other people to read and edit quickly */
+
+body {
+  font-family: arial;
+  font-size: 80%;
+  line-height: 1.2em;
+  width: 100%;
+  margin: 0;
+  background: #eee;
+  font-weight: normal;
+}
+/* you can but your code all in one line like above */
+
+#page {
+  margin: 20px;
+}
+/* or on different lines like below */
+
+#logo {
+  width: 35%;
+  margin-top: 5px;
+  font-family: georgia;
+  display: inline-block;
+}
+/* but try and be as consist possible */
+
+#nav {
+  width: 60%;
+  display: inline-block;
+  text-align: right;
+  float: right;
+}
+
+#nav ul {}
+
+#nav ul li {
+  display: inline-block;
+  height: 62px;
+}
+
+#nav ul li a {
+  padding: 20px;
+  background: orange;
+  color: white;
+}
+
+#nav ul li a:hover {
+  background-color: #ffb424;
+  box-shadow: 0px 1px 1px #666;
+}
+
+#nav ul li a:active {
+  background-color: #ff8f00;
+}
+
+#nav ul li.red a {
+  background-color: red;
+}
+
+#nav ul li.orange a {
+  background-color: orange;
+}
+
+#nav ul li.yellow a {
+  background-color: yellow;
+}
+
+#content {
+  margin: 30px 0;
+  background: white;
+  padding: 20px;
+  clear: both;
+}
+
+#footer {
+  border-bottom: 1px #ccc solid;
+  margin-bottom: 10px;
+  clear: both;
+}
+
+#footer p {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 80%;
+  color: grey;
+}
+/* multiple styles seperated by a , */
+
+#content,
+ul li a {
+  box-shadow: 0px 1px 1px #999;
+}
+  </style>
 <!--
 
     _/_/_/_/  _/_/_/_/    _/_/    _/      _/
@@ -8,90 +156,10 @@
 _/_/_/_/  _/_/_/_/  _/    _/  _/      _/
 
 -->
-<html>
-<meta charset="utf-8">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-<link type="text/css" rel="stylesheet" href="#" />
-<title>Sean</title>
-</head>
-
-<body>
-  <style scoped>
-    .nav a {
-      color: #5a5a5a;
-      font-size: 11px;
-      font-weight: bold;
-      padding: 14px 10px;
-      text-transform: uppercase;
-    }
-
-    .nav li {
-      display: inline;
-    }
-
-    .jumbotron {
-      background-image: url('http://www.h3dwallpapers.com/wp-content/uploads/2014/08/Digital-media-backgrounds-21.jpg');
-      height: 500px;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    .jumbotron .container {
-      position: relative;
-      top: 100px;
-    }
-
-    .jumbotron h1 {
-      color: #fff;
-      font-size: 48px;
-      font-family: 'Shift', sans-serif;
-      font-weight: bold;
-    }
-
-    .jumbotron p {
-      font-size: 20px;
-      color: #fff;
-    }
-
-    .learn-more {
-      background-color: #f7f7f7;
-    }
-
-    .learn-more h3 {
-      font-family: 'Shift', sans-serif;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .learn-more a {
-      color: #00b0ff;
-    }
-
-    .neighborhood-guides {
-      background: url("https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSbdkXRT6J0kt0PrzwY1HRfnLYMFb0m3N3NBAli_pTBreomXFUl");
-      background-size: cover;
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      border-bottom: 1px solid #dbdbdb;
-    }
-
-    .neighborhood-guides h2 {
-      color: white;
-      font-size: 24px;
-    }
-
-    .neighborhood-guides p {
-      color: white;
-      font-size: 15px;
-      margin-bottom: 13px;
-    }
-  </style>
-
   <div id="page">
     <div id="logo">
       <img src="https://raw.githubusercontent.com/seanc12/seanc12.github.io/61c7939bfe3ae2f71d5aee0053039e6585d59e6b/pic/abstract5.jpg">
-      <h1><a href="https://github.com/seanc12">Sean</a></h1>
+      <h1><a href="https://github.com/seanc12">Sean Cox</a></h1>
     </div>
     <div id="nav">
       <ul>
@@ -112,7 +180,7 @@ _/_/_/_/  _/_/_/_/  _/    _/  _/      _/
       <thead>
         <tr>
           <td>codecademy.com</td>
-          <td><a href="https://learn.co"<img src="https://github.com/seanc12/seanc12.github.io/blob/master/logo/learn.co.gif?raw=true"></a></td>
+          <td><a href="https://learn.co" target="_blank"><img src="https://github.com/seanc12/seanc12.github.io/blob/master/logo/learn.co.gif?raw=true"></a></td>
           <td>https://www.codeavengers.com</td>
           <td>https://www.codeschool.com</td>
         </tr>
@@ -137,7 +205,7 @@ _/_/_/_/  _/_/_/_/  _/    _/  _/      _/
   </div>
   <div id="footer">
     <p>
-      Webpage made by <a href="#" target="_blank">Sean</a>
+      Webpage made by <a href="#" target="_blank">Sean Cox</a>
     </p>
   </div>
   </div>
