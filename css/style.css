@@ -8,11 +8,14 @@ html {
 
 body {
   font-family: arial;
-  font-size: 80%;
   line-height: 1.2em;
   width: 100%;
   margin: 0;
   font-weight: normal;
+}
+
+#logo {
+  display: inline;
 }
 
 #logo img {
@@ -28,13 +31,12 @@ body {
 }
 
 #nav {
+  display: inline;
   width: 60%;
   display: inline-block;
   text-align: right;
   float: right;
 }
-
-#nav ul {}
 
 #nav ul li {
   display: inline-block;
@@ -56,27 +58,17 @@ body {
   background-color: #ff8f00;
 }
 
-#nav ul li.red a {
-  background-color: red;
-}
-
 #nav ul li.orange a {
   background-color: orange;
 }
 
-#nav ul li.yellow a {
-  background-color: yellow;
-}
-
 #content {
   margin: 30px 0;
-  background: white;
   padding: 20px;
   clear: both;
 }
 
 #footer {
-  border-bottom: 1px #ccc solid;
   margin-bottom: 10px;
   clear: both;
 }
@@ -85,15 +77,10 @@ body {
   text-align: right;
   text-transform: uppercase;
   font-size: 80%;
-  color: grey;
+  color: #333;
 }
 
-#content,
-ul li a {
-  box-shadow: 0px 1px 1px #999;
-}
-
-.tables {
+#tables {
   text-align: center;
 }
 
@@ -106,6 +93,7 @@ h2 {
   font-family: 'Rochester', cursive;
   margin: 0 auto;
   text-align: center;
+  font-weight: 500;
 }
 
 h3 {
@@ -125,4 +113,5 @@ a {
 a:hover,
 a:active {
   text-decoration: underline;
+  color: white;
 }
