@@ -1,16 +1,76 @@
 <!doctype html>
 
 <meta charset="utf-8">
-<title>Tic-Tac-Toe</title>
 
 <head>
+<link rel="shortcut icon" href="../favicon.ico" />
+<title>Tic-Tac-Toe</title>
+<style>
+  body {
+    background: url("http://7-themes.com/data_images/out/14/6814345-underwater-wallpaper.jpg")
+  }
+
+  img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+  }
+
+  .nav a {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .nav li {
+    display: inline;
+  }
+
+  h1 {
+    color: white;
+  }
+
+  button {
+    height: 100px;
+    width: 100px;
+    margin: 4px 2px;
+    font-size: 60px;
+    vertical-align: top;
+  }
+
+  #playButton {
+    font-size: 16px;
+    height: 50px;
+    width: 320px;
+  }
+
+  .grid {
+    width: 320px;
+    background-color: none;
+  }
+
+  p {
+    color: white;
+  }
+</style>
+
 </head>
 
 <body>
+  <!--
+    _/_/_/_/  _/_/_/_/    _/_/    _/      _/
+   _/        _/        _/    _/  _/_/    _/
+  _/_/_/_/  _/_/_/_/  _/_/_/_/  _/  _/  _/
+       _/  _/        _/    _/  _/    _/_/
+_/_/_/_/  _/_/_/_/  _/    _/  _/      _/
+-->
   <center>
     <div class="nav">
       <ul>
-        <li><img src="../turtle.jpg"></li>
+        <li><img src="../pic/abstract5.jpg"></li>
         <li><a href="../index.html">Home</a></li>
         <li><a href="http://www.google.com" target="_blank">Search</a></li>
         <li><a href="mailto:honu.menehune@gmail.com">Contact</a>
@@ -38,70 +98,23 @@
       </select>
     </p>
   </center>
+  </script>
 </body>
-<style>
-  body {
-    background: url("http://7-themes.com/data_images/out/14/6814345-underwater-wallpaper.jpg")
-  }
-  
-  img {
-    height: 75px;
-    border-radius: 50%;
-  }
-  
-  .nav a {
-    color: white;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 14px 10px;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .nav li {
-    display: inline;
-  }
-  
-  h1 {
-    color: white;
-  }
-  
-  button {
-    height: 100px;
-    width: 100px;
-    margin: 4px 2px;
-    font-size: 60px;
-    vertical-align: top;
-  }
-  
-  #playButton {
-    font-size: 16px;
-    height: 50px;
-    width: 320px;
-  }
-  
-  .grid {
-    width: 320px;
-    background-color: none;
-  }
-  
-  p {
-    color: white;
-  }
-</style>
+
 <script>
+
   var gameover = false;
-  
+
   function checkCombination(b1, b2, b3) {
     if (b1.innerHTML != '' && b1.innerHTML == b2.innerHTML && b1.innerHTML == b3.innerHTML) {
-      
+
       gameover = true;
       b1.style.backgroundColor = 'limeGreen';
       b2.style.backgroundColor = 'limeGreen';
       b3.style.backgroundColor = 'limeGreen';
     }
   }
-  
+
   function checkWin() {
     checkCombination(button1, button2, button3);
     checkCombination(button4, button5, button6);
@@ -112,21 +125,21 @@
     checkCombination(button1, button5, button9);
     checkCombination(button3, button5, button7);
   }
-  
+
   function pickSquare() {
     if (gameover || this.innerHTML != '') return;
-    
+
     this.innerHTML = selectTurn.value;
-    
+
     if (selectTurn.value == 'X') {
       selectTurn.value = 'O';
     } else {
       selectTurn.value = 'X';
     }
-    
+
     checkWin();
   }
-  
+
   function resetGame() {
     button1.style.backgroundColor = '';
     button2.style.backgroundColor = '';
@@ -148,7 +161,7 @@
     button9.innerHTML = '';
     gameover = false;
   }
-    
+
   button1.onclick = pickSquare;
   button2.onclick = pickSquare;
   button3.onclick = pickSquare;
