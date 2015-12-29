@@ -1,0 +1,251 @@
+<!doctype html>
+<title>Sean | FIFA World Cup Quiz</title>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="../favicon.ico"/>
+</head>
+<style>
+  body {
+    background-color: #001A00;
+    font-size: 20px;
+  }
+
+  .nav a {
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 14px 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+
+  .nav li {
+    display: inline;
+  }
+
+  .lead {
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    border: 1px, solid;
+    border-color: #1F7A1F;
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  #logo {
+    height: 100px;
+    width: 100px;
+    margin: 4px 10px;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1,
+  h2,
+  h3 {
+    background-color: #1F7A1F;
+    color: white;
+    font-family: sans-serif;
+    font-size: 25px;
+    letter-spacing: .4px;
+    margin: 30px 30px;
+    padding: 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  p {
+    color: white;
+    text-align: center;
+  }
+
+  a {
+    color: #1F7A1F;
+  }
+
+  select,
+  input {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: .4px;
+    padding: 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  button {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 13px;
+    letter-spacing: .4px;
+    margin: 30px 30px;
+    padding: 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  button:hover {
+    background-color: #1F7A1F;
+  }
+
+  iframe {
+    width: 500px;
+    height: 500px;
+  }
+</style>
+<body>
+  <center>
+    <hr>
+    <div class="nav">
+      <div class="container">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="http://www.google.com" target="_blank">Search</a></li>
+          <li><a href="mailto:sean.cox.or@gmail.com">Contact</a>
+      </div>
+    </div>
+    <hr>
+
+    <h1>FIFA World Cup Quiz</h1>
+    <p>The questions for this quiz were taken from <a href="http://www.worldcupbrazil.net" target="_blank">this world cup guide</a>. Try the quiz before you visit their website.
+
+      <div class="lead">
+        <img src="http://img.fifa.com/images/tournaments/17/logo/2014.png"></div>
+        <img src="http://seanc12.github.io/pic/abstract5.jpg">
+      <div>
+        <section>
+          <h2>Question 1</h2>
+          <p>Who has won the most World Cup championships?</p>
+          <select id="championshipsSelect">
+            <option>Zinedine Zidane</option>
+            <option value="correct">Pele</option>
+            <option>Diego Maradona</option>
+            <option>Neymar</option>
+            <option>Lionel Messi</option>
+            <option>Ronaldinho</option>
+          </select>
+
+          <h2>Question 2</h2>
+          <p>Which country built their own hotel and training camp for the 2014 World Cup?</p>
+          <select id="hotelSelect">
+            <option value="correct">Germany</option>
+            <option>England</option>
+            <option>Iran</option>
+            <option>Spain</option>
+            <option>China</option>
+            <option>Argentina</option>
+          </select>
+
+          <h2>Question 3</h2>
+          <p>Which country made their World Cup debut in 2010?</p>
+          <select id="debutSelect">
+            <option>New Zealand</option>
+            <option>Egypt</option>
+            <option>Australia</option>
+            <option>Uragray</option>
+            <option>Netherlands</option>
+            <option value="correct">None</option>
+          </select>
+
+          <h2>Question 4</h2>
+          <p>Brazil have now hosted the World Cup twice. How many other countries have hosted the World Cup twice?</p>
+          <br>
+          <input id="hostNumber" type="number">
+
+          <h2>Question 5</h2>
+          <p>Not including 2014, how many different countries have won a World Cup?</p>
+          <input id="countriesNumber" type="number">
+
+          <h2>Question 6</h2>
+          <p>How many countries have participated in every World Cup?</p>
+          <input id="participatedNumber" type="number">
+
+          <h2>Question 7</h2>
+          <p>How many times has Brazil hosted a World Cup?</p>
+          <input id="hostedNumber" type="number">
+
+          <p>
+            <button id="checkAnswersButton">Check Answers</button>
+        </section>
+        <hr>
+        <div>
+          <div class="nav">
+            <div class="container">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="http://www.google.com" target="_blank">Search</a></li>
+                <li><a href="mailto:sean.cox.or@gmail.com">Contact</a>
+            </div>
+          </div>
+          <hr>
+          <br>
+          <br>
+        </div>
+        <p>
+          <iframe src="https://www.youtube.com/embed/TGtWWb9emYI" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <p>
+          <iframe width="854" height="480" src="https://www.youtube.com/embed/lzCaQOq6moM" frameborder="0" allowfullscreen></iframe>
+        </p>
+        <iframe width="854" height="480" src="https://www.youtube.com/embed/bGESp1xNTZw" frameborder="0" allowfullscreen></iframe>
+        <p>
+          <p>
+            <iframe width="854" height="480" src="https://www.youtube.com/embed/5920zQO-csQ" frameborder="0" allowfullscreen></iframe>
+          </p>
+          <hr>
+        <div>
+          <div class="nav">
+            <div class="container">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="http://www.google.com" target="_blank">Search</a></li>
+                <li><a href="mailto:honu.menehune@gmail.com">Contact</a>
+            </div>
+          </div>
+          <hr
+
+          <div>
+  </center>
+</body>
+
+<script>
+  function calculateScore() {
+    //Add up the score
+    var score = 0;
+
+    if (championshipsSelect.value == 'correct') score++;
+    if (hotelSelect.value == 'correct') score++;
+    if (debutSelect.value == 'correct') score++;
+
+    if (hostNumber.value == 4) score++;
+    if (countriesNumber.value == 8) score++;
+    if (participatedNumber.value == 1) score++;
+    if (hostedNumber.value == 2) score++;
+
+    var message = '';
+    if (score > 4) {
+      message = 'You are amazing!';
+    } else if (score > 2) {
+      message = 'Good job!';
+    } else {
+      message = 'You need to do some research!';
+    }
+
+    //Display the score
+    alert('Score: ' + score + '/7' + message);
+  }
+
+  checkAnswersButton.onclick = calculateScore;
+</script>
