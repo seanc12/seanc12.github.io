@@ -101,6 +101,10 @@ h3 {
   font-family: 'Orbitron', sans-serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 table {
   margin: 0 auto;
 }
