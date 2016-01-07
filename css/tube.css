@@ -1,0 +1,45 @@
+// setting this transition will cause the video size to animate // when it changes.
+[class*=' col-'],
+[class^='col-'] {
+  transition: all .5s ease-in-out;
+}
+
+// start dynamic video size
+// thanks to
+// http://coolestguidesontheplanet.com/videodrome/youtube/
+.video-container {
+	height: 0;
+	overflow: hidden;
+	padding: {
+    bottom: 56.25%; // this will force a 16:9 aspect ratio
+  }
+	position: relative;
+  
+  iframe,
+  object,
+  embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+// end dynamic video size
+
+// offset utility
+.offset-2 {
+  margin: {
+    top: 30px;
+  }
+}
+
+// config pen
+* {
+  &, &:before, &:after {
+    box-sizing: border-box;
+    &, &:focus, &:active, &:focus:active {
+      outline: none;
+    }
+  }
+}
