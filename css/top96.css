@@ -1,3 +1,6 @@
+body {
+	text-align: center;
+}
 span {
 	color: red;
 }
@@ -11,4 +14,10 @@ iframe {
 img {
 	width: 50px;
 	height: 50px;
+}
+li {
+	text-align: left;
+	border-style: double;
+	padding: 2px;
+	list-style-type: none;
 }
