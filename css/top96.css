@@ -5,11 +5,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.8;
-}
-
-.container-fluid {
-	margin 0, auto;
+  opacity: 0.95;
 }
 
 .nav a {
@@ -29,23 +25,68 @@ body {
 
  .list li {
 	text-align: left;
-	border-style: double;
+	border-style: inset;
 	padding: 4px;
+	margin: 4px;
 	list-style-type: none;
 	background-color: #262626;
 	color: white;
 }
 
-a:hover {
+.nav a:hover {
+    background-color: #404040;
+    text-decoration: none;
+    color: #55B8ED;
+}
+
+.list h3:hover {
+    background-color: #404040;
+    text-decoration: none;
+    color: #55B8ED;
+}
+
+.list a:hover {
     background-color: #404040;
     text-decoration: none;
     color: white;
 }
 
+.panel {
+	background-color: #262626;
+	color: white;
+}
+
+.panel-default {
+	color: white;
+	margin: 4px;
+}
+
+.panel-heading {
+	background-color: #262626;
+	color: white;
+	margin: 4px;
+}
+
+.panel-title {
+	background-color: #262626;
+	color: white;
+}
+
+.panel-group {
+	background-color: #262626;
+	color: white;
+}
+
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #262626;
+    border-color: #ddd;
+}
+
 h1 {
 	color: white;
 	background-color: #262626;
-	border-style: double;
+	border-style: outset;
 	padding: 10px;
 	text-align: center;
 }
@@ -54,22 +95,35 @@ h2 {
 	font-size: 20px;
 	color: white;
 	background-color: #262626;
-	border-style: double;
+	border-style: outset;
 	padding: 10px;
 	text-align: center;
 }
 
-h3 , p {
+h3 {
 	font-size: 15px;
 	color: white;
 	background-color: #262626;
-	border-style: double;
+	border-style: outset;
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 15px;
+	color: white;
 	padding: 10px;
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 span {
-	color: red;
+	color: #55B8ED;
 	font-style: italic;
 }
 
@@ -77,6 +131,7 @@ iframe {
 	width: 640px;
 	height: 360px;
 	max-width: 100%;
+	opacity: 1;
 }
 
 img {
